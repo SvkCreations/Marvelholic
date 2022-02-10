@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+body{
+    background-color: #212529;
+}
+.sidebar{
+    width: 15vw;
+    height: 100vh;
+    position: fixed;
+    float: left;
+    top: 0;
+    background-color: #1b1b1b;
+}
+.sidebar ul{
+    list-style-type: none;
+}
+.sidebar a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.sidebar a:hover{
+    color:#c31432;
+    transition-duration: .5s;
+}
+.main-content{
+    float: right;
+    width: 82vw;
+}
+.navbar-brand{
+    font-size: 28px;
+}
+.nav-link{
+    font-size: 18px;
+}
+.main{
+    background: linear-gradient(to right, #360b0b, #c31432);
+    height: 400px;
+    width: 98%;
+}
+.search{
+    border: 2px solid #c31432;
+    color: #c31432;
+}
+.search:hover{
+    background-color: #c31432;
+    color: #fff;
+}
+.preview{
+    background-color: #c31432;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #c31432;
+}
+.preview:hover{
+    color: #fff;
+    background: transparent;
+    transition-duration: .5s;
+}
+  .text{
+    font-size: 30px;
+    color: white;
+    display: none;
+    animation-name: text-anim;
+    animation-duration: .75s;
+    padding-left: 5%;
+  }
+@keyframes text-anim{
+    from{opacity:0; padding-left: 0%;}
+    to{opacity: 1;  padding-left: 5%}
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+      display:none
+    }
+    .main-content{
+        width: 100%;
+    }
+    .main{
+        height: 600px;
+        width: 100%;
+    }
+    .main{
+        font-size: 18px;
+        padding-left: 35px;
+        padding-right: 15px;
+    }
+    .hero{
+        width: 450px;
+    }
+
+  }
